@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+<link type="text/css" rel="stylesheet" href="css/OA全局.css">
+<link href="css/Home.css" rel="stylesheet" type="text/css">
+<script src="js/slider.js" type="text/javascript"></script>
+<title>首页</title>
+</head>
+
+<body>
+	<header>
+	    <div class="logo">
+		    <div class="logo_images">
+			    <h1>Organization Assistant</h1>
+			</div>
+			<div class="login">
+			    <a href="#">登录</a>
+				<a href="#">注册</a>
+			</div>
+		</div>
+		<nav>
+		    <ul>
+			    <li class="current"><a href="#">首页</a></li>
+				<li><a href="#">活动</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">移动端下载</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="mainbody">
+	    <div class="slider">
+			<div class="main" id="template_main">
+				<div class="main-i {{css}}" id="main_{{index}}">
+					<div class="caption">
+						<h2>{{h2}}</h2>
+						<h3>{{h3}}</h3>
+					</div>
+					<img src="image/{{index}}.jpg" class="picture" />
+				</div>
+			</div>
+			<div class="ctrl ctrl-i_active" id="template_ctrl">
+				<a class="ctrl-i" id="ctrl_{{index}}" href="javascript:switchSlider({{index}});"><img src="image/{{index}}.jpg" /></a>
+			</div>
+	    </div>
+		<div class="organization"></div>
+		<div class="notice"></div>
+		<div class="activity"></div>
+	</div>
+	<footer>
+	    <h4 style="text-align:center; margin-top:70px;">@caojian</h4>
+	    <div class="partner"></div>
+		<div class="publisher"></div>
+	</footer>
+</body>
+</html>
